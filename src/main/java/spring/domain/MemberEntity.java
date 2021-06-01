@@ -23,6 +23,7 @@ public class MemberEntity {
     @Column // 필드
     String email; // 사용자 이메일
 
+    @Enumerated(EnumType.STRING) // 열거형 String 타입으로 넣기 => 생략시 : 번호로 들어감
     @Column
     Role role;
 
